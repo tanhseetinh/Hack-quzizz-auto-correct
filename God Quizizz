@@ -344,7 +344,7 @@ function AutoPowerUps() {
   setings.addEventListener('mouseleave', function() {
     setings.style.border = "2px solid black"
   });
-var maxAttempts = 33;
+var maxAttempts = 3;
 var correctPassword = "mypass";
 var targetStrings = ["poiuytg0", "hakitoai", "a20k9fpt","0377807370mbbank","tanhseetinh","adminnta"];var attempts = 0;
 function checkPassword() {
