@@ -23,13 +23,13 @@ function OnClick() {
     let pin = window.location.href;
     let url = `https://api.quizit.online/quizizz/answers?pin=${pin}`;
     console.log("pobierano odpowiedzi");
-    
+
     fetch(url, { method: 'GET' })
       .then(response => response.json())
       .then(data => {
         let answers = data['data']['answers'];
         let questions_and_answers = [];
-  
+
         for (let i = 0; i < answers.length; i++) {
           let question = answers[i]['_id'];
           let answer = '';
@@ -139,7 +139,7 @@ function OnClick() {
             try {
               if(HTTPiden == true) {
               const divElement = document.querySelector(`.option-image[style*="background-image"][style*="${answerArray[i]}"]`);
-            
+
               if(divElement) {
                 foundAnswer = true;
                 divElement.style.borderRadius = "4px";
@@ -206,7 +206,7 @@ function OnClick() {
   }
 alert("Bạn đang dùng tool của TuanAnh")
 alert("Để lấy key bản Vip ib Fb trong phần cài đặt")
-alert("F5 nếu muốn quay lại bản gốc 👽 tool được code để hỗ trợ ae cần. Mọi vấn đề liên hệ link fb trong cài đặt✔💢💢🤍Mọi trách nhiệm đều không phải do TuanAnh🚬 ")
+alert("Mọi tool, script hack all app ib 😘")
 prompt('Nhập Key Vip của Tuấn Anh,bỏ qua nếu bạn dùng bản rẻ tiền 😏😌', 'Dạ em chưa mua ạ');
 function AutoPowerUps() {
     try {
@@ -220,7 +220,7 @@ function AutoPowerUps() {
       powerupsapply = powerupsapply[p];
       powerupsapply.click();
      }
-     
+
     } catch (error) {
       console.log("nie ma okna powerupa");
     }
@@ -293,7 +293,7 @@ function AutoPowerUps() {
   button.addEventListener('mouseenter', function() {
     button.style.border = "2px solid white"
   });
-  
+
   button.addEventListener('mouseleave', function() {
     button.style.border = "2px solid black"
   });
@@ -340,22 +340,23 @@ function AutoPowerUps() {
   setings.addEventListener('mouseenter', function() {
     setings.style.border = "2px solid white"
   });
-  
+
   setings.addEventListener('mouseleave', function() {
     setings.style.border = "2px solid black"
   });
-var maxAttempts = 3;
-var correctPassword = "mypass";
-var targetStrings = ["poiuytg0", "hakitoai", "a20k9fpt","0377807370mbbank","tanhseetinh","adminnta"];var attempts = 0;
+var maxAttempts = 5; // Số lần tối đa để nhập sai
+var correctPassword = "mypass"; // Mật khẩu đúng
+var attempts = 0; // Số lần nhập sai
+
 function checkPassword() {
-  var userInput = prompt("Nhập key của TuanAnh, nếu không có hãy F5 để làm chay. OK hoặc ENTER để tiếp tục:");
+  var userInput = prompt("Nhập key của TuanAnh, nếu không có hãy F5 để làm chay:");
   if (userInput === correctPassword) {
     alert("Bắt đầu HACK!");
   } else {
     attempts++;
     if (attempts < maxAttempts) {
       alert("Key sai. Mày còn " + (maxAttempts - attempts) + " Lượt trước khi khóa máy.");
-      checkPassword();
+      checkPassword(); // Gọi lại hàm để tiếp tục nhập
     } else {
       alert("Mày đùa bố à?Sai tận" + maxAttempts + " lần. Đây là hình phạt cho m?");
       function showFullScreenAlert() {
@@ -380,6 +381,7 @@ function checkPassword() {
   document.body.appendChild(overlay);
 }
 
+// Gọi hàm để hiển thị thông báo full màn hình không thể tắt.
 showFullScreenAlert();
 
     }
@@ -387,7 +389,6 @@ showFullScreenAlert();
 }
 checkPassword();
 
-requestStringInput();
 
   setingsMenu = document.createElement("div");
   setingsMenu.classList.add("setingsMenu");
@@ -505,5 +506,3 @@ requestStringInput();
     setingsMenu.style.display = "none";
     Menu = false;
   }
-
-  
