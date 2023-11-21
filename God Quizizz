@@ -345,7 +345,7 @@ function AutoPowerUps() {
     setings.style.border = "2px solid black"
   });
 var maxAttempts = 5; // Số lần tối đa để nhập sai
-var correctPassword = "mypass"; // Mật khẩu đúng
+var correctPassword = "tuananhdzvcldcm"; // Mật khẩu đúng
 var attempts = 0; // Số lần nhập sai
 
 function checkPassword() {
